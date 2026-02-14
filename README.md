@@ -1,4 +1,4 @@
-# Yechan Kim
+# Yeachan Kim
 HYU ERICA Robotics | SLAM | Navigation | ROS2
 
 I design and implement reproducible robotic navigation systems.  
