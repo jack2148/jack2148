@@ -1,74 +1,73 @@
 # Yeachan Kim
-HYU ERICA Robotics | SLAM | Navigation | ROS2
 
-I design and implement reproducible robotic navigation systems.  
-My focus is on SLAM, local planner optimization, and robust navigation under real-world uncertainty.
+**Undergraduate @ HYU ERICA | Robotics · SLAM · Navigation · ROS2**
 
----
-
-## 🔬 Current Focus
-
-- 2D LiDAR + Wheel Encoder SLAM
-- ROS2 Nav2 local planner benchmarking (DWA vs TEB vs MPPI)
-- Quantitative evaluation of navigation performance
-- Robustness under sensor noise and latency
+I build and experiment with robotic navigation systems — focusing on reproducible evaluation, sensor fusion, and real-world robustness.
+Currently expanding from LiDAR-based navigation toward 3D vision and perception-driven autonomy.
 
 ---
 
-## 🧪 Main Project
+## About
 
-### navigation_stack_lab
-
-A ROS2-based navigation research platform built for controlled experimental comparison.
-
-**Scope**
-- LiDAR-only SLAM
-- LiDAR + Wheel Odometry SLAM
-- Nav2 Local Planner Comparison
-- Parameter tuning & failure case analysis
-
-**Evaluation Metrics**
-- Time-to-goal (sec)
-- Collision rate (%)
-- Trajectory smoothness (Σ|Δθ|)
-- CPU load (%)
-- Stability under injected noise
-
-**Goal**
-Build a reproducible benchmark framework for 2D navigation and extend it toward 3D perception-based planning.
+- B.E. candidate in Mechanical Engineering, Hanyang University ERICA
+- Research interest: autonomous mobile robots, 2D/3D SLAM, local planner optimization, 3D perception
+- Building toward graduate research in robot navigation and perception
 
 ---
 
-## 🏁 Selected Work
+## Current Work
 
-- Pure Pursuit vs Stanley Controller comparison (autonomous driving competition)
-- Parameter sensitivity experiments
-- Failure case documentation with rosbag-based analysis
+**[navigation_stack_lab](https://github.com/jack2148/navigation_stack_lab)**
+— ROS2-based platform for controlled comparison of mobile robot navigation algorithms
 
----
-
-## 🛠 Technical Stack
-
-- ROS2 (Nav2)
-- C++ / Python
-- Gazebo Simulation
-- LiDAR, IMU, Wheel Encoder
-- Experimental design & system-level debugging
+| Focus | Details |
+|---|---|
+| SLAM | LiDAR-only / LiDAR + Wheel Encoder fusion |
+| Planner Benchmark | DWB vs MPPI under Nav2 |
+| Evaluation Metrics | Time-to-goal, collision rate, trajectory smoothness, CPU load |
+| Robustness | Injected sensor noise and latency experiments |
 
 ---
 
-## 🎯 Research Direction
+## Selected Projects
 
-Short-term:
-- High-robustness 2D navigation benchmark platform
+**[Kaist-ROS2_path-tracking](https://github.com/jack2148/Kaist-ROS2_path-tracking)**
+— KAIST Mobility Challenge
+- Implemented and compared Pure Pursuit and Stanley lateral control algorithms
+- Tuned parameters for stable path tracking under varying driving conditions
 
-Mid-term:
-- Depth-based 3D mapping
-- 3D navigation in cluttered environments
-
-Long-term:
-- Learning-based SLAM and planning integration
+**[Lidar_drive_competition](https://github.com/jack2148/Lidar_drive_competition)**
+— LiDAR-based Obstacle Avoidance
+- Cone and obstacle detection using 2D LiDAR
+- Reactive control logic for real-time avoidance
+- Documented sensor limitations and failure cases
 
 ---
 
-📫 Contact: yeachan4842@gmail.com
+## Perception Expansion
+
+Extending toward camera-based perception to enable richer scene understanding beyond LiDAR geometry.
+
+- RGB-D camera integration, point cloud processing
+- Camera-robot calibration, object detection, 6D pose estimation
+- Perception-to-action pipeline for navigation and manipulation
+
+---
+
+## Stack
+
+```
+ROS2 (Nav2)   |   C / C++ / Python   |   Gazebo   |   LiDAR / IMU / Wheel Encoder / RGB-D
+```
+
+---
+
+## Direction
+
+- **Now** — Reproducible 2D navigation benchmark (DWB vs MPPI, quantitative metrics)
+- **Next** — RGB-D perception integration, 3D navigation in cluttered environments
+- **Later** — Perception-driven autonomous navigation, learning-based SLAM and planning
+
+---
+
+📫 yeachan4842@gmail.com
