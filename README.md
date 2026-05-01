@@ -66,13 +66,18 @@ I am expanding from LiDAR-based navigation toward RGB-D based robot perception t
 
 ## Stack
 
-```text
-ROS2 / Nav2   |   C / C++ / Python   |   Gazebo   |   LiDAR / IMU / RGB-D / Wheel Encoder
+ROS2 / Nav2 · C / C++ / Python · Gazebo · LiDAR / IMU / RGB-D / Wheel Encoder
 
-Direction
+---
 
--Now — ROS2-based 2D navigation benchmark with quantitative evaluation
--Next — RGB-D perception integration and point cloud-based object understanding
--Later — Perception-driven autonomous navigation in cluttered and dynamic environments
+## Direction
 
-yeachan4842@gmail.com
+- **Now** — ROS2-based 2D navigation benchmark with quantitative evaluation
+- **Next** — RGB-D perception integration and point cloud-based object understanding
+- **Later** — Perception-driven autonomous navigation in cluttered and dynamic environments
+
+---
+
+## Contact
+
+📫 yeachan4842@gmail.com
