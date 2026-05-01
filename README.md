@@ -1,17 +1,17 @@
 # Yeachan Kim
 
-**Undergraduate @ HYU ERICA | Robotics · SLAM · Navigation · ROS2**
+**Undergraduate @ HYU ERICA | Robotics · Manipulation · Perception · ROS2**
 
-I build and experiment with robotic navigation systems — focusing on reproducible evaluation, sensor fusion, and real-world robustness.
-Currently expanding from LiDAR-based navigation toward 3D vision and perception-driven autonomy.
+I build robotic systems that bridge perception and control — from navigation benchmarks to manipulation pipelines.
+Focused on AI-based robot control, environment recognition, and learning-based approaches toward real-world task execution.
 
 ---
 
 ## About
 
-- B.E. candidate in Mechanical Engineering, Hanyang University ERICA
-- Research interest: autonomous mobile robots, 2D/3D SLAM, local planner optimization, 3D perception
-- Building toward graduate research in robot navigation and perception
+- B.E. candidate in Robotics Engineering, Hanyang University ERICA
+- Research interests: perception-driven navigation, learning-based robot control, object pose estimation, autonomous mobile robots
+- Building toward robust robot autonomy through perception-control integration
 
 ---
 
@@ -42,6 +42,13 @@ Currently expanding from LiDAR-based navigation toward 3D vision and perception-
 - Reactive control logic for real-time avoidance
 - Documented sensor limitations and failure cases
 
+**[rgbd-object-pose-estimation](https://github.com/jack2148/rgbd-object-pose-estimation)**
+— RGB-D based object position and orientation estimation for robotic manipulation
+- Performed instance segmentation using YOLOv8n-seg on custom industrial object dataset
+- Estimated 3D object position via depth-based back-projection using Intel RealSense D455
+- Approximated object orientation using contour-based geometric analysis
+- Integrated as a ROS2 perception module publishing object pose data at 10 Hz
+
 ---
 
 ## Perception Expansion
@@ -50,14 +57,14 @@ Extending toward camera-based perception to enable richer scene understanding be
 
 - RGB-D camera integration, point cloud processing
 - Camera-robot calibration, object detection, 6D pose estimation
-- Perception-to-action pipeline for navigation and manipulation
+- Interested in perception-to-manipulation pipelines and learning-based robot control
 
 ---
 
 ## Stack
 
 ```
-ROS2 (Nav2)   |   C / C++ / Python   |   Gazebo   |   LiDAR / IMU / Wheel Encoder / RGB-D
+ROS2 (Nav2 / MoveIt2)   |   C / C++ / Python   |   Gazebo   |   LiDAR / IMU / RGB-D / Wheel Encoder
 ```
 
 ---
@@ -66,7 +73,7 @@ ROS2 (Nav2)   |   C / C++ / Python   |   Gazebo   |   LiDAR / IMU / Wheel Encode
 
 - **Now** — Reproducible 2D navigation benchmark (DWB vs MPPI, quantitative metrics)
 - **Next** — RGB-D perception integration, 3D navigation in cluttered environments
-- **Later** — Perception-driven autonomous navigation, learning-based SLAM and planning
+- **Later** — Perception-driven manipulation, imitation learning for robot control
 
 ---
 
