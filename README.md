@@ -66,7 +66,10 @@ I am expanding from LiDAR-based navigation toward RGB-D based robot perception t
 
 ## Stack
 
-ROS2 / Nav2 · C / C++ / Python · Gazebo · LiDAR / IMU / RGB-D / Wheel Encoder
+Programming: C / C++ / Python 
+Frameworks Tools: ROS 2 / Nav2 / GitHub
+Sensors: LiDAR / IMU / RGB-D / Wheel Encoder
+
 
 ---
 
