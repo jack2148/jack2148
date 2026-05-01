@@ -60,14 +60,14 @@ I am expanding from LiDAR-based navigation toward RGB-D based robot perception t
 - RGB-D camera integration and depth-based 3D position estimation
 - Object detection and instance segmentation for industrial objects
 - Point cloud processing and camera-robot calibration
-- Perception modules for robot manipulation and autonomous navigation pipelines
+- Perception modules for robotic perception and autonomous navigation pipelines
 
 ---
 
 ## Stack
 
 Programming: C / C++ / Python 
-Frameworks Tools: ROS 2 / Nav2 / GitHub
+Frameworks & Tools: ROS 2 / Nav2 / GitHub
 Sensors: LiDAR / IMU / RGB-D / Wheel Encoder
 
 
