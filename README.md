@@ -1,86 +1,35 @@
 # Yeachan Kim
 
-**Undergraduate @ HYU ERICA | Robotics · 3D Perception · Navigation · ROS2**
-
-I build robotic systems that connect perception, navigation, and control.  
-My current focus is ROS2-based mobile robot navigation and RGB-D perception for object understanding in real-world robotic systems.
-
----
+**Robotics undergraduate building real-robot systems and controlled experiments — now developing teleoperation-based data collection and imitation learning for manipulation.**
 
 ## About
 
-- B.E. candidate in Robotics Engineering, Hanyang University ERICA
-- Research interests: 3D perception, RGB-D vision, object pose estimation, perception-driven navigation, autonomous mobile robots
-- Building toward robust robot autonomy through perception-control integration
-
----
+Robotics Engineering undergraduate at Hanyang University ERICA, graduating in August 2027. I build and evaluate real-robot systems—from sensor fusion and navigation to RGB-D perception—and am extending that systems experience into teleoperation-based data collection and imitation learning with ACT and Diffusion Policy for manipulation.
 
 ## Current Work
 
-**[navigation_stack_lab](https://github.com/jack2148/navigation_stack_lab)**  
-— ROS2-based platform for controlled comparison of mobile robot navigation algorithms
+**[OMY_FRANKA_TELEOP](https://github.com/jack2148/OMY_FRANKA_TELEOP)** — **Status: Ongoing.** A cross-embodiment Cartesian teleoperation pipeline that transfers a real OMY-L100 leader arm to a Franka FR3 in MuJoCo. OMY-to-MuJoCo synchronization is complete; FR3 Cartesian retargeting is in progress.
 
-| Focus | Details |
-|---|---|
-| SLAM | 2D LiDAR-based mapping and localization |
-| Sensor Fusion | LiDAR + Wheel Encoder-based navigation |
-| Planner Benchmark | DWB vs MPPI under ROS2 Nav2 |
-| Evaluation Metrics | Time-to-goal, collision rate, trajectory smoothness, CPU load |
-| Robustness | Sensor noise and latency experiments |
-
----
+**[dp-act-policy-study](https://github.com/jack2148/dp-act-policy-study)** — Controlled Push-T imitation-learning experiments in LeRobot. Diffusion Policy reached **24%** success, compared with **2%** for the baseline ACT configuration and **12%** for ACT with the temporal-ensembling execution strategy removed.
 
 ## Selected Projects
 
-**[rgbd-object-pose-estimation](https://github.com/jack2148/rgbd-object-pose-estimation)**  
-— RGB-D based object position and orientation estimation for robotic perception
-- Performed instance segmentation using YOLOv8n-seg on a custom industrial object dataset
-- Estimated 3D object position via depth-based back-projection using Intel RealSense D455
-- Approximated object orientation using contour-based geometric analysis
-- Integrated as a ROS2 perception module publishing object pose data at 10 Hz
+**[navigation_stack_lab](https://github.com/jack2148/navigation_stack_lab)** — Real-hardware ROS2 patrol robot: SLAM, EKF sensor fusion, Nav2, MPPI tuning, and person-following logic. The linked experiment repository reports controlled DWB–MPPI comparisons.
 
-**[Kaist-ROS2_path-tracking](https://github.com/jack2148/Kaist-ROS2_path-tracking)**  
-— KAIST Mobility Challenge
-- Implemented Pure Pursuit and Stanley lateral control algorithms for path tracking
-- Tuned parameters for stable path tracking under varying driving conditions
-- Integrated ROS2-based path tracking components for autonomous driving scenarios
+**[rgbd-object-pose-estimation](https://github.com/jack2148/rgbd-object-pose-estimation)** — RealSense D455 RGB-D perception with YOLOv8 segmentation and a FoundationPose-based 6D-pose path published as ROS2 messages; mean Mask mAP50: **0.9290**.
 
-**[Lidar_drive_competition](https://github.com/jack2148/Lidar_drive_competition)**  
-— LiDAR-based Obstacle Avoidance
-- Implemented cone and obstacle detection using 2D LiDAR
-- Developed reactive control logic for real-time obstacle avoidance
-- Documented sensor limitations and failure cases from real-world testing
+**[Kaist-ROS2_path-tracking](https://github.com/jack2148/Kaist-ROS2_path-tracking)** — Compared and tuned Pure Pursuit and Stanley lateral controllers for KAIST Mobility Challenge path tracking.
 
----
-
-## 3D Perception Expansion
-
-I am expanding from LiDAR-based navigation toward RGB-D based robot perception to enable richer scene understanding beyond 2D geometry.
-
-- RGB-D camera integration and depth-based 3D position estimation
-- Object detection and instance segmentation for industrial objects
-- Point cloud processing and camera-robot calibration
-- Perception modules for robotic perception and autonomous navigation pipelines
-
----
-
-## Stack
-
-Programming: C / C++ / Python 
-Frameworks & Tools: ROS 2 / Nav2 / GitHub
-Sensors: LiDAR / IMU / RGB-D / Wheel Encoder
-
-
----
+**[Lidar_drive_competition](https://github.com/jack2148/Lidar_drive_competition)** — 2D LiDAR obstacle/cone detection and reactive avoidance, including sensor limitations and failure cases.
 
 ## Direction
 
-- **Now** — ROS2-based 2D navigation benchmark with quantitative evaluation
-- **Next** — RGB-D perception integration and point cloud-based object understanding
-- **Later** — Perception-driven autonomous navigation in cluttered and dynamic environments
-
----
-
-## Contact
+- **Now** — Teleoperation-based data collection and ACT/Diffusion Policy comparison experiments.
+- **Next** — Sim-to-real transfer to a real FR3: collect real demonstrations and train and run policies.
+- **Later** — Extend manipulation work to the RBY-1 humanoid.
 
 📫 yeachan4842@gmail.com
+
+## Stack
+
+`ROS2 · Nav2 · MoveIt2 · PyTorch · LeRobot · Python · C/C++ · MuJoCo · Gazebo · LiDAR · IMU · RGB-D · Wheel Encoder`
