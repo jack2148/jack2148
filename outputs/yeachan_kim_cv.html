@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yeachan Kim CV</title>
+    <link rel="stylesheet" href="yeachan_kim_cv.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="cv-header">
+        <div class="identity">
+          <h1><span class="first-name">YEACHAN</span> <span class="last-name">KIM</span></h1>
+          <p class="position">Robotics Engineer <span aria-hidden="true">&middot;</span> Imitation Learning &amp; Manipulation</p>
+          <p class="address">Ansan, Gyeonggi-do, Republic of Korea</p>
+          <div class="contacts">
+            <div class="contact-row">
+              <span>[Mobile] (+82) 10-2459-4842</span>
+              <span>[Email] yeachan4842@gmail.com</span>
+              <span>[GitHub] jack2148</span>
+            </div>
+            <div class="contact-row contact-row-secondary">
+              <span>[Notion] TO FILL</span>
+            </div>
+          </div>
+        </div>
+        <img class="profile-photo" src="assets/profile.png" alt="Portrait of Yeachan Kim">
+      </header>
+
+      <section class="cv-section summary">
+        <h2><span>Sum</span>mary</h2>
+        <p>
+          ROS 2 기반 real-robot 시스템을 직접 구현하고 평가해 온 풀스택 로보틱스 경험을 바탕으로,
+          현재 imitation learning과 bimanual manipulation 중심의 robot learning 연구로 전환하고 있습니다.
+          한국생산기술연구원(KITECH) teleoperation 과제에서는 원격조작 기반 demonstration 수집과
+          imitation learning 파이프라인 구축을 진행하고 있으며, 한양대 ERICA CAI Lab에서는 실물 휴머노이드
+          RBY-1에서 ACT와 Diffusion Policy 기반 양팔 조작 학습을 수행하고 있습니다. 기존 navigation,
+          perception, hardware deployment 경험을 manipulation을 위한 데이터 수집·인식·평가 루프로 연결하는
+          연구자를 지향합니다.
+        </p>
+      </section>
+
+      <section class="cv-section">
+        <h2><span>Pro</span>jects</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <h3>RBY-1 Imitation Learning (CAI Lab, Hanyang Univ. ERICA)</h3>
+              <p class="subtitle">Bimanual Manipulation &middot; ACT / Diffusion Policy</p>
+            </div>
+            <p class="date">Ongoing</p>
+          </div>
+          <ul>
+            <li>실물 휴머노이드 RBY-1에서 양팔 조작 태스크를 대상으로 demonstration 수집, policy 학습, real-robot 평가 루프를 구축 중.</li>
+            <li>ACT와 Diffusion Policy 기반 imitation learning 모델을 비교하며, 데이터 품질·action horizon·성공률 평가 기준을 정리 중.</li>
+            <li class="to-fill">TO FILL: 대상 task, 수집한 demonstration 수, 학습/평가 진행 상황.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <h3>Teleoperation-based Imitation Learning (KITECH, Korea Institute of Industrial Technology)</h3>
+              <p class="subtitle">Teleoperation Data Collection &middot; Imitation Learning Pipeline</p>
+            </div>
+            <p class="date">Ongoing</p>
+          </div>
+          <ul>
+            <li>teleoperation 기반 demonstration 수집부터 데이터 정제, 학습 데이터셋 구성, policy 학습으로 이어지는 모방학습 파이프라인을 구축 중.</li>
+            <li>실물 플랫폼에서 조작 태스크 수행 로그와 관측·행동 데이터를 일관된 포맷으로 저장하고 재현성 있는 평가 절차를 정리.</li>
+            <li class="to-fill">TO FILL: 구체적 과제 내용, 사용 장비/플랫폼, 현재까지 진행 상황.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <h3>Foundation-model-based 6D Pose Estimation for Manipulation</h3>
+              <p class="subtitle">Perception Module for Manipulation</p>
+            </div>
+            <p class="date">2026</p>
+          </div>
+          <ul>
+            <li>Intel RealSense D455와 YOLOv8-seg/foundation model 기반 segmentation을 결합해 산업용 부품의 3D 위치(X, Y, Z)와 방향을 추정.</li>
+            <li>depth back-projection, point cloud 처리, contour 기반 geometric orientation estimation을 통해 manipulation 전에 필요한 object pose 정보를 제공.</li>
+            <li>ROS 2 perception module로 object pose를 발행하도록 통합했으며, custom 3-class dataset에서 mAP50 Box 0.932 / Mask 0.929를 달성.</li>
+            <li class="to-fill">TO FILL: 사용한 foundation model명, GitHub 링크.</li>
+          </ul>
+        </article>
+
+        <article class="entry compact">
+          <div class="entry-head">
+            <div>
+              <h3>Robotics Systems (Full-stack Navigation &amp; Control)</h3>
+              <p class="subtitle">ROS 2 Nav2 &middot; Real-hardware Deployment</p>
+            </div>
+            <p class="date">2025-2026</p>
+          </div>
+          <ul>
+            <li>DWB vs MPPI local planner 비교 검증(ROS 2 Nav2, 실하드웨어)</li>
+            <li>LiDAR 기반 실시간 콘 인식·회피(IRO line tracing, 2025)</li>
+            <li>차량 횡방향 제어 Pure Pursuit vs Stanley 비교(KAIST Mobility Challenge, 2026)</li>
+            <li>하드웨어: Jetson Orin NX, STM32, YDLiDAR</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2><span>Pub</span>lications</h2>
+        <article class="entry compact">
+          <div class="entry-head">
+            <div>
+              <h3>ICROS 2026</h3>
+              <p class="subtitle">Undergraduate Poster &middot; First Author</p>
+            </div>
+            <p class="date">2026</p>
+          </div>
+          <ul>
+            <li>"Performance Comparison of DWB and MPPI Local Planners in ROS 2 Nav2 Environment"</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section skills">
+        <h2><span>Ski</span>lls</h2>
+        <dl>
+          <dt>Programming</dt>
+          <dd>C, C++, Python</dd>
+          <dt>Robot Learning</dt>
+          <dd>PyTorch, Imitation Learning (ACT, Diffusion Policy), <span class="to-fill">TO FILL: LeRobot / CVAE / DDPM 등 해당 항목</span></dd>
+          <dt>Frameworks</dt>
+          <dd>ROS 2, Nav2, Git</dd>
+          <dt>Perception</dt>
+          <dd>6D Pose Estimation, Point Cloud, RGB-D, YOLOv8</dd>
+          <dt>Robotics</dt>
+          <dd>Path Planning (MPPI, DWB), Real-robot deployment</dd>
+        </dl>
+      </section>
+
+      <section class="cv-section">
+        <h2><span>Edu</span>cation</h2>
+        <article class="entry compact">
+          <div class="entry-head">
+            <div>
+              <h3>Hanyang University ERICA</h3>
+              <p class="subtitle">B.S. in Robotics Engineering</p>
+            </div>
+            <p class="date">Expected Aug. 2027</p>
+          </div>
+          <ul>
+            <li>한양대학교 ERICA, 로봇공학과(B.S.), 2027년 8월(가을학기) 졸업 예정</li>
+            <li>GPA: 3.73 / 4.5 (전공 3.85 / 4.5)</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section">
+        <h2><span>Act</span>ivity</h2>
+        <article class="entry compact">
+          <div class="entry-head">
+            <div>
+              <h3>Hy-mec, Department of Robotics Engineering</h3>
+              <p class="subtitle">President</p>
+            </div>
+            <p class="date">2025</p>
+          </div>
+          <ul>
+            <li>로봇공학과 학회 Hy-mec 회장: 라인트레이싱 대회 주최, 교내 Git/GitHub 스터디·특강 진행.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cv-section paper-reviews">
+        <h2><span>Sel</span>ected Paper Reviews</h2>
+        <ul>
+          <li><span class="to-fill">TO FILL: paper title 1 + Notion link</span></li>
+          <li><span class="to-fill">TO FILL: paper title 2 + Notion link</span></li>
+          <li><span class="to-fill">TO FILL: paper title 3 + Notion link</span></li>
+          <li><span class="to-fill">TO FILL: paper title 4 + Notion link</span></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
