@@ -1,35 +1,51 @@
 # Yeachan Kim
 
-**Robotics undergraduate building real-robot systems and controlled experiments — now developing teleoperation-based data collection and imitation learning for manipulation.**
+**Robotics · Robot Learning · Manipulation**
 
-## About
+Robotics Engineering undergraduate at Hanyang University ERICA and undergraduate research intern at KITECH since July 2026. Current work focuses on teleoperation-based manipulation demonstrations, imitation learning, and data-efficient demonstration collection. Interested in hybrid robot-learning approaches that combine data-driven policies with robot kinematics and structured control.
 
-Robotics Engineering undergraduate at Hanyang University ERICA, graduating in August 2027. I build and evaluate real-robot systems—from sensor fusion and navigation to RGB-D perception—and am extending that systems experience into teleoperation-based data collection and imitation learning with ACT and Diffusion Policy for manipulation.
+[Email](mailto:yeachan4842@gmail.com)
 
-## Current Work
+## Current Research
 
-**[OMY_FRANKA_TELEOP](https://github.com/jack2148/OMY_FRANKA_TELEOP)** — **Status: Ongoing.** A cross-embodiment Cartesian teleoperation pipeline that transfers a real OMY-L100 leader arm to a Franka FR3 in MuJoCo. OMY-to-MuJoCo synchronization is complete; FR3 Cartesian retargeting is in progress.
+### 1. Teleoperation & Manipulation Learning
 
-**[dp-act-policy-study](https://github.com/jack2148/dp-act-policy-study)** — Controlled Push-T imitation-learning experiments in LeRobot. Diffusion Policy reached **24%** success, compared with **2%** for the baseline ACT configuration and **12%** for ACT with the temporal-ensembling execution strategy removed.
+**[OMY_FRANKA_TELEOP](https://github.com/jack2148/OMY_FRANKA_TELEOP)**
 
-## Selected Projects
+Built a teleoperation pipeline from a physical OMY-L100 leader to a Franka FR3 in MuJoCo, including Cartesian pose retargeting, 6D-to-7DoF damped least-squares inverse kinematics, and null-space control. This is a simulation-stage FR3 system; deployment to physical FR3 hardware is not claimed.
 
-**[navigation_stack_lab](https://github.com/jack2148/navigation_stack_lab)** — Real-hardware ROS2 patrol robot: SLAM, EKF sensor fusion, Nav2, MPPI tuning, and person-following logic. The linked experiment repository reports controlled DWB–MPPI comparisons.
+### 2. Imitation Learning & Policy Analysis
 
-**[rgbd-object-pose-estimation](https://github.com/jack2148/rgbd-object-pose-estimation)** — RealSense D455 RGB-D perception with YOLOv8 segmentation and a FoundationPose-based 6D-pose path published as ROS2 messages; mean Mask mAP50: **0.9290**.
+**[dp-act-policy-study](https://github.com/jack2148/dp-act-policy-study)**
 
-**[Kaist-ROS2_path-tracking](https://github.com/jack2148/Kaist-ROS2_path-tracking)** — Compared and tuned Pure Pursuit and Stanley lateral controllers for KAIST Mobility Challenge path tracking.
+Studying ACT and Diffusion Policy in LeRobot-based manipulation tasks, including Push-T analysis and FR3 MuJoCo experiments using teleoperation demonstrations. Current work investigates how execution strategy, trajectory coverage, and demonstration distribution affect policy performance.
 
-**[Lidar_drive_competition](https://github.com/jack2148/Lidar_drive_competition)** — 2D LiDAR obstacle/cone detection and reactive avoidance, including sensor limitations and failure cases.
+The Push-T study includes a controlled 50-episode execution-strategy ablation. FR3 results are reported separately as fixed-initial-condition pilot evaluations, not as a generalization benchmark.
 
-## Direction
+### 3. Current Research Question
 
-- **Now** — Teleoperation-based data collection and ACT/Diffusion Policy comparison experiments.
-- **Next** — Sim-to-real transfer to a real FR3: collect real demonstrations and train and run policies.
-- **Later** — Extend manipulation work to the RBY-1 humanoid.
+Current focus: data-efficient demonstration collection for robot manipulation, using trajectory coverage and policy performance to identify underrepresented task conditions.
 
-📫 yeachan4842@gmail.com
+I am also interested in hybrid robot-learning methods that integrate learned policies with robot kinematics and structured control.
 
-## Stack
+## Supporting Robotics Systems Work
 
-`ROS2 · Nav2 · MoveIt2 · PyTorch · LeRobot · Python · C/C++ · MuJoCo · Gazebo · LiDAR · IMU · RGB-D · Wheel Encoder`
+**[rgbd-object-pose-estimation](https://github.com/jack2148/rgbd-object-pose-estimation)** — RGB-D manipulation perception using an Intel RealSense D455, YOLOv8-seg, CAD meshes, and FoundationPose. The verified mean mask mAP50 is **0.929** across three industrial-part classes; this is a segmentation metric, not 6D-pose accuracy.
+
+**[navigation_stack_lab](https://github.com/jack2148/navigation_stack_lab)** — Real-hardware ROS 2 navigation and system integration with SLAM, EKF sensor fusion, Nav2, DWB/MPPI experiments, and person-following logic. MPPI computation and parameters were optimized to improve the control loop from approximately 5–6 Hz to a stable 20 Hz.
+
+## Selected Achievements
+
+- 1st Place — 2026 Creative Comprehensive Design Competition
+- Bronze Award — College of Engineering Capstone Design Competition
+- Finalist — KAIST Mobility Challenge 2026
+- Undergraduate Paper Award — ICROS 2026
+
+## Publications / Presentations
+
+- “Performance Comparison of DWB and MPPI Local Planners in ROS 2 Nav2 Environment” — ICROS 2026, poster, first author
+- “Multimodal Perception and Monitoring System for Indoor Security Patrol Robots” — ICROS 2026, poster, Undergraduate Paper Award
+
+## Technical Areas
+
+`ROS 2 · MuJoCo · LeRobot · ACT · Diffusion Policy · Python · C/C++ · Nav2 · SLAM · MPPI · DWB · RGB-D · YOLOv8 · FoundationPose`
