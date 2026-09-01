@@ -22,9 +22,7 @@ Studying ACT and Diffusion Policy in LeRobot-based manipulation tasks, including
 
 The Push-T study includes a controlled 50-episode execution-strategy ablation. FR3 results are reported separately as fixed-initial-condition pilot evaluations, not as a generalization benchmark.
 
-## Current Research
-
-I am currently studying manipulation policy behavior through ACT and Diffusion Policy experiments in MuJoCo, with a focus on how demonstration trajectory and task-condition coverage relate to policy performance and data efficiency.
+## Research Interests
 
 My broader research interest is in robotic manipulation architectures that separate learning-based decision making from kinematics- and control-based execution, combining data-driven policies with structured robot control.
 
