@@ -1,4 +1,4 @@
-# Yea chan Kim
+# Yea Chan Kim
 
 **Robotics · Robot Learning · Manipulation**
 
@@ -18,7 +18,7 @@ Built a teleoperation pipeline from a physical OMY-L100 leader to a Franka FR3 i
 
 **[dp-act-policy-study](https://github.com/jack2148/dp-act-policy-study)**
 
-Studying ACT and Diffusion Policy in LeRobot-based manipulation tasks, including Push-T analysis and FR3 MuJoCo experiments using teleoperation demonstrations. Current work investigates how execution strategy, trajectory coverage, and demonstration distribution affect policy performance.
+Studying ACT and Diffusion Policy in LeRobot-based manipulation tasks, including Push-T analysis and FR3 MuJoCo experiments using teleoperation demonstrations. Current work investigates how execution strategy, investigates the relationship between execution strategy, trajectory coverage, demonstration distribution, and policy behavior
 
 The Push-T study includes exploratory 50-episode comparisons of ACT execution configurations.
 
