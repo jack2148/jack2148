@@ -1,4 +1,4 @@
-# Yeachan Kim
+# Yea chan Kim
 
 **Robotics · Robot Learning · Manipulation**
 
@@ -20,7 +20,7 @@ Built a teleoperation pipeline from a physical OMY-L100 leader to a Franka FR3 i
 
 Studying ACT and Diffusion Policy in LeRobot-based manipulation tasks, including Push-T analysis and FR3 MuJoCo experiments using teleoperation demonstrations. Current work investigates how execution strategy, trajectory coverage, and demonstration distribution affect policy performance.
 
-The Push-T study includes a controlled 50-episode execution-strategy ablation. FR3 results are reported separately as fixed-initial-condition pilot evaluations, not as a generalization benchmark.
+The Push-T study includes exploratory 50-episode comparisons of ACT execution configurations.
 
 ## Research Interests
 
@@ -36,7 +36,7 @@ My broader research interest is in robotic manipulation architectures that separ
 
 - 1st Place — 2026 Creative Comprehensive Design Competition
 - Bronze Award — College of Engineering Capstone Design Competition
-- Finalist — KAIST Mobility Challenge 2026
+- Final — KAIST Mobility Challenge 2025
 - Undergraduate Paper Award — ICROS 2026
 
 ## Publications / Presentations
