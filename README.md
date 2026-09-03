@@ -46,4 +46,4 @@ My broader research interest is in robotic manipulation architectures that separ
 
 ## Technical Areas
 
-`ROS 2 · MuJoCo · LeRobot · ACT · Diffusion Policy · Python · C/C++ · Nav2 · SLAM · MPPI · DWB · RGB-D · YOLOv8 · FoundationPose`
+`ROS 2 · MuJoCo · LeRobot · ACT · Diffusion Policy · Python · C/C++ · PyTorch · Nav2 · SLAM · YOLOv8 · FoundationPose`
