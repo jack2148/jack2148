@@ -2,13 +2,13 @@
 
 **Robotics · Robot Learning · Manipulation**
 
-Robotics Engineering undergraduate at Hanyang University ERICA and research intern at the Korea Institute of Industrial Technology (KITECH). My work connects robot systems, teleoperation, human demonstrations, imitation learning, and fixed-condition evaluation with failure analysis.
+Robotics Engineering undergraduate at Hanyang University ERICA and research intern at the Korea Institute of Industrial Technology (KITECH). My work spans robot systems, teleoperation, human demonstrations, imitation learning, and controlled policy evaluation.
 
 [Email](mailto:yeachan4842@gmail.com)
 
 ## Current Focus
 
-Building manipulation workflows from Geomagic Touch teleoperation to demonstrations, LeRobot datasets, ACT and Diffusion Policy training, and spatial analysis of fixed evaluation results on a MuJoCo-simulated Franka FR3.
+Building manipulation workflows from Geomagic Touch teleoperation to demonstrations, LeRobot datasets, ACT and Diffusion Policy training, and controlled evaluation on a MuJoCo-simulated Franka FR3.
 
 ## Featured Research
 
@@ -16,15 +16,17 @@ Building manipulation workflows from Geomagic Touch teleoperation to demonstrati
 
 [franka-teleoperation](https://github.com/jack2148/franka-teleoperation) — Geomagic Touch teleoperation for a **MuJoCo-simulated Franka FR3**, including Cartesian mapping, damped least-squares inverse kinematics, null-space control, clutching, command conditioning, and haptic software validation.
 
-Historical OMY-L100 work has a separate validation scope; this repository does not claim physical Franka deployment or exact reconstruction of the original OMY executable environment.
+The teleoperation stack also supports OMY-L100 leader input.
 
 ### Franka Imitation Learning
 
-[franka-imitation-learning](https://github.com/jack2148/franka-imitation-learning) — Geomagic Touch demonstrations → LeRobot dataset → ACT / Diffusion Policy → frozen TEST50 → spatial and failure analysis.
+[franka-imitation-learning](https://github.com/jack2148/franka-imitation-learning) — Geomagic Touch demonstrations → LeRobot dataset → ACT / Diffusion Policy training → frozen TEST50 evaluation.
 
 The dataset contains **50 demonstrations and 48,272 frames** of operator and wrist RGB at **20 Hz**.
 
-On the **same frozen TEST50**, ACT 300k succeeded in **27/50 (54%)** trials and Diffusion Policy 480k in **43/50 (86%)**. These results describe the specified checkpoints and configurations, not algorithm-wide superiority.
+ACT and Diffusion Policy were evaluated on the **same frozen TEST50 of 50 different initial states**, with **27/50** and **43/50** successful rollouts respectively. These results describe the evaluated checkpoints under the same test protocol and do not establish general algorithm superiority.
+
+At KITECH, I also collected teleoperation demonstrations on physical Franka FR3 and UR5 systems using Sigma / Omega leader devices.
 
 ## Supporting Robotics Systems
 
@@ -38,20 +40,25 @@ Mean mask mAP50 is approximately **0.929**; this is a **segmentation metric, not
 
 [navigation_stack_lab](https://github.com/jack2148/navigation_stack_lab) — Real-robot ROS 2 system integration across sensors and TF, SLAM, EKF / AMCL localization, Nav2, and DWB / MPPI navigation.
 
+In the ICROS planner study, DWB and MPPI were evaluated across **2 scenarios × 5 runs per planner**, for **20 physical-robot runs** under the same map, waypoint, and costmap conditions.
+
+- Static obstacle: MPPI **5/5 successful runs**, DWB **0/5 successful runs**
+- Narrow turn: both planners **5/5**, with MPPI achieving **1.77× lower position error**
+
 Additional supporting work: [DWB vs MPPI Experiment](https://github.com/jack2148/ROS2_MPPI_DWB_Experiment_ICROS) · [KAIST Path Tracking](https://github.com/jack2148/Kaist-ROS2_path-tracking)
 
 ## Selected Research Outputs
 
-- “Performance Comparison of DWB and MPPI Local Planners in ROS 2 Nav2 Environment” — ICROS 2026 poster, first author
-- “Multimodal Perception and Monitoring System for Indoor Security Patrol Robots” — ICROS 2026 poster
+- “Performance Comparison of DWB and MPPI Local Planners in ROS 2 Nav2 Environment” — ICROS 2026 poster, **First Author**
+- “Multimodal Perception and Monitoring System for Indoor Security Patrol Robots” — ICROS 2026 poster, **Co-Author · Undergraduate Paper Award**
 
 ## Selected Awards
 
-- 1st Place — 2026 Creative Comprehensive Design Competition
-- Bronze Award — College of Engineering Capstone Design Competition
-- Finalist — KAIST Mobility Challenge 2025
-- Undergraduate Paper Award — ICROS 2026
+- Bronze Award — College of Engineering Capstone Design Competition, 2026.09
+- Undergraduate Paper Award — ICROS 2026, 2026.07
+- 1st Place — Creative Comprehensive Design Competition, 2026.06
+- Finalist — KAIST Mobility Challenge 2025, 2026.02
 
 ## Technical Stack
 
-`ROS 2 · MuJoCo · LeRobot · ACT · Diffusion Policy · Python · C/C++ · PyTorch · Nav2 · SLAM · YOLOv8 · FoundationPose`
+`ROS 2 · MuJoCo · LeRobot · Teleoperation · Imitation Learning (ACT, Diffusion Policy) · Python · C/C++ · PyTorch · Nav2 · SLAM`
